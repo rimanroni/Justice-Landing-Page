@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solutions</title>
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- daisyui and tailwind css link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+     <style>
+
+        .bodyFont {
+        font-family: "EB Garamond", serif;
+         }
+         .btns{
+            background-color: #B68C5A;
+            color: white;
+         }
+         .banner{
+            background-image: url('images/banner.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+         }
+         .textFont{
+            font-family: "Poppins", sans-serif;
+         }
+
+     </style>
+ </head>
+<body class="textFont">
+     <!-- header -->
+      <header class="max-w-screen-xl mx-auto px-8">
+        <!-- navbar start -->
+        <nav class="py-4 flex justify-between items-center">
+            <div>
+                <img src="images/logo2.png" alt="">
+            </div>
+            <ul class="lg:flex hidden text-xl  font-semibold gap-x-4 ">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Cases</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+            <div>
+                <button class="btns px-4 py-2 font-bold rounded-md">Free Consultation</button>
+            </div>
+        </nav>
+        <ul class=" lg:hidden    font-semibold gap-x-4 flex justify-center mt-4   ">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Cases</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+        <!-- navbar end -->
+         <!-- banner section -->
+          <section class="banner   p-5 py-12 text-white flex justify-center my-4 rounded-md">
+               <div class="text-center space-y-5">
+                <h1 class="text-3xl font-bold lg:text-7xl bodyFont">We Provide Effective <br> Legal Solutions</h1>
+                <p class="text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                <div class="flex ">
+                    <input type="text" class="w-[75%] outline-none text-black rounded-sm px-2 py-3" placeholder="Search your services">
+                    <button class="btns mx-2 px-4 py-2 rounded-md">Search</button>
+                </div>
+               </div>
+          </section>
+      </header>
+      <!-- main content -->
+       <main></main>
+       <!-- footer section -->
+        <footer></footer>
 </body>
 </html>
